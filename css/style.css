@@ -977,7 +977,7 @@ img {
   justify-content: flex-start;
   gap: 10px;
   text-align: center;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   min-height: 292px;
   height: 100%;
   border: 1px solid #dce6f1;
@@ -1778,7 +1778,7 @@ img {
 /* ---- Guide Cards ---- */
 .guide-cards {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
 
@@ -1988,7 +1988,7 @@ img {
   transition: transform 0.25s ease;
 }
 
-.faq-panel {
+.js-enabled .faq-panel {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -2005,7 +2005,7 @@ img {
   max-width: 72ch;
 }
 
-.faq-item.is-open .faq-panel {
+.js-enabled .faq-item.is-open .faq-panel {
   opacity: 1;
 }
 
@@ -2267,7 +2267,7 @@ img {
   left: 20px;
   right: 20px;
   bottom: 20px;
-  z-index: 300;
+  z-index: 10000;
 }
 
 .consent-banner[hidden] {

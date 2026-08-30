@@ -15,15 +15,15 @@
 
 <link rel="stylesheet" href="css/style.css">
 
-<link rel="icon" type="image/webp" href="images/gutachter-sillenbuch-logo.webp">
+<link rel="icon" type="image/webp" href="images/svb-brueckers-logo.webp">
 
 
 <!-- Open Graph (für Google, WhatsApp, LinkedIn Vorschau) -->
-<meta property="og:title" content="Kfz Gutachter Heumaden – Unfallgutachten & Schadengutachten">
+<meta property="og:title" content="Kfz Gutachter Heumaden – Unfallgutachten &amp; Schadengutachten">
 <meta property="og:description" content="Unabhängiger Kfz-Sachverständiger für Stuttgart-Heumaden, Sillenbuch und Umgebung. Unfallgutachten, Schadengutachten und Fahrzeugbewertung.">
 <meta property="og:url" content="https://gutachter-heumaden.de">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://gutachter-heumaden.de/images/bastian-brueckers-portrait.webp">
+<meta property="og:image" content="https://gutachter-heumaden.de/images/Gutachter_Portrait.png">
 
 
 <!-- Local Business Schema für Google -->
@@ -143,7 +143,7 @@ if (location.protocol !== "https:" && !isLocalPreviewHost) {
         <img src="images/svb-brueckers-logo.webp" alt="Logo von SVB Brückers, Kfz Gutachter in Stuttgart" width="36" height="36" class="logo-img">
         <span class="logo-text">SVB Brückers</span>
       </a>
-      <button class="menu-toggle" aria-label="Menü öffnen" onclick="toggleMenu()">
+      <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav" onclick="toggleMenu()">
         <span></span><span></span><span></span>
       </button>
       <nav class="nav" id="nav">
@@ -151,8 +151,9 @@ if (location.protocol !== "https:" && !isLocalPreviewHost) {
         <a href="#ablauf" onclick="closeMenu()">Ablauf</a>
         <a href="#vorteile" onclick="closeMenu()">Vorteile</a>
         <a href="#einzugsgebiet" onclick="closeMenu()">Einzugsgebiet</a>
-        <a href="#faq" onclick="closeMenu()">FAQ</a>
-        <a href="/ratgeber/" onclick="closeMenu()">Ratgeber</a>
+        <a href="https://svb-brueckers.de/faq/" onclick="closeMenu()">FAQ</a>
+        <a href="https://svb-brueckers.de/ratgeber/" onclick="closeMenu()">Ratgeber</a>
+        <a href="https://svb-brueckers.de/ratgeber/130-prozent-rechner/" onclick="closeMenu()">Rechner</a>
         <a href="#kontakt" onclick="closeMenu()">Kontakt</a>
       </nav>
     </div>
@@ -661,23 +662,23 @@ if (location.protocol !== "https:" && !isLocalPreviewHost) {
       <p class="section-subtitle">Kurze Antworten für Geschädigte aus Stuttgart-Heumaden, Sillenbuch, Riedenberg und Umgebung.</p>
       <div class="faq-list" data-faq-accordion aria-label="Häufige Fragen zum Kfz Gutachter in Heumaden">
         <div class="faq-item">
-          <h3><button class="faq-trigger" type="button"><span>Wann sollte ich in Heumaden einen Kfz Gutachter beauftragen?</span><span class="faq-symbol" aria-hidden="true">+</span></button></h3>
-          <div class="faq-panel"><p>Nach einem unverschuldeten Unfall sollten Sie möglichst früh einen unabhängigen Kfz Gutachter beauftragen. So wird der Schaden vollständig dokumentiert, bevor Reparaturen beginnen oder die gegnerische Versicherung eigene Kürzungen vornimmt.</p></div>
+          <h3><button class="faq-trigger" id="local-faq-1-button" type="button" aria-expanded="true" aria-controls="local-faq-1-panel"><span>Wann sollte ich in Heumaden einen Kfz Gutachter beauftragen?</span><span class="faq-symbol" aria-hidden="true">−</span></button></h3>
+          <div class="faq-panel" id="local-faq-1-panel" role="region" aria-labelledby="local-faq-1-button"><p>Nach einem unverschuldeten Unfall sollten Sie möglichst früh einen unabhängigen Kfz Gutachter beauftragen. So wird der Schaden vollständig dokumentiert, bevor Reparaturen beginnen oder die gegnerische Versicherung eigene Kürzungen vornimmt.</p></div>
         </div>
         <div class="faq-item">
-          <h3><button class="faq-trigger" type="button"><span>Komme ich als Gutachter auch nach Sillenbuch oder Riedenberg?</span><span class="faq-symbol" aria-hidden="true">+</span></button></h3>
-          <div class="faq-panel"><p>Ja. Ich unterstütze Sie vor Ort in Stuttgart-Heumaden, Sillenbuch, Riedenberg und der Umgebung. Je nach Situation kann die Begutachtung direkt am Fahrzeugstandort erfolgen.</p></div>
+          <h3><button class="faq-trigger" id="local-faq-2-button" type="button" aria-expanded="true" aria-controls="local-faq-2-panel"><span>Komme ich als Gutachter auch nach Sillenbuch oder Riedenberg?</span><span class="faq-symbol" aria-hidden="true">−</span></button></h3>
+          <div class="faq-panel" id="local-faq-2-panel" role="region" aria-labelledby="local-faq-2-button"><p>Ja. Ich unterstütze Sie vor Ort in Stuttgart-Heumaden, Sillenbuch, Riedenberg und der Umgebung. Je nach Situation kann die Begutachtung direkt am Fahrzeugstandort erfolgen.</p></div>
         </div>
         <div class="faq-item">
-          <h3><button class="faq-trigger" type="button"><span>Ist das Unfallgutachten für mich kostenfrei?</span><span class="faq-symbol" aria-hidden="true">+</span></button></h3>
-          <div class="faq-panel"><p>Bei einem unverschuldeten Haftpflichtschaden übernimmt in der Regel die gegnerische Versicherung die Kosten für das Gutachten. Auch bei Teilschuld biete ich eine transparente Lösung, damit für Sie kein unnötiges Kostenrisiko entsteht.</p></div>
+          <h3><button class="faq-trigger" id="local-faq-3-button" type="button" aria-expanded="true" aria-controls="local-faq-3-panel"><span>Ist das Unfallgutachten für mich kostenfrei?</span><span class="faq-symbol" aria-hidden="true">−</span></button></h3>
+          <div class="faq-panel" id="local-faq-3-panel" role="region" aria-labelledby="local-faq-3-button"><p>Bei einem unverschuldeten Haftpflichtschaden übernimmt in der Regel die gegnerische Versicherung die Kosten für das Gutachten. Auch bei Teilschuld biete ich eine transparente Lösung, damit für Sie kein unnötiges Kostenrisiko entsteht.</p></div>
         </div>
         <div class="faq-item">
-          <h3><button class="faq-trigger" type="button"><span>Warum sollte ich nicht einfach den Gutachter der Versicherung nehmen?</span><span class="faq-symbol" aria-hidden="true">+</span></button></h3>
-          <div class="faq-panel"><p>Der Gutachter der Versicherung arbeitet im Interesse der Versicherung. Ein unabhängiger Kfz Gutachter dokumentiert den Schaden neutral und vollständig, damit Reparaturkosten, Wertminderung und weitere Ansprüche nachvollziehbar festgehalten werden.</p></div>
+          <h3><button class="faq-trigger" id="local-faq-4-button" type="button" aria-expanded="true" aria-controls="local-faq-4-panel"><span>Warum sollte ich nicht einfach den Gutachter der Versicherung nehmen?</span><span class="faq-symbol" aria-hidden="true">−</span></button></h3>
+          <div class="faq-panel" id="local-faq-4-panel" role="region" aria-labelledby="local-faq-4-button"><p>Der Gutachter der Versicherung arbeitet im Interesse der Versicherung. Ein unabhängiger Kfz Gutachter dokumentiert den Schaden neutral und vollständig, damit Reparaturkosten, Wertminderung und weitere Ansprüche nachvollziehbar festgehalten werden.</p></div>
         </div>
       </div>
-      <p class="section-subtitle"><a href="/faq/">Weitere Fragen zum Ablauf, zu Kosten und zur Schadenregulierung finden Sie im FAQ-Bereich.</a></p>
+      <p class="section-subtitle"><a href="https://svb-brueckers.de/faq/">Weitere Fragen zum Ablauf, zu Kosten und zur Schadenregulierung finden Sie im FAQ-Bereich.</a></p>
     </div>
   </section>
 
@@ -689,12 +690,17 @@ if (location.protocol !== "https:" && !isLocalPreviewHost) {
           <!-- Nur Teaser: kein FAQ-Markup, da keine direkten Fragen mit Antworten vorhanden sind. -->
           <h3>Häufige Fragen</h3>
           <p>Antworten zu Kosten, Ablauf und Ihren Rechten nach einem Unfall.</p>
-          <a class="btn btn-primary" href="/faq/">Zu den FAQ</a>
+          <a class="btn btn-primary" href="https://svb-brueckers.de/faq/">Zu den FAQ</a>
         </article>
         <article class="guide-card" role="listitem">
           <h3>Ratgeber</h3>
           <p>Wichtige Tipps und Hintergrundwissen für den richtigen Umgang mit Ihrem Schaden.</p>
-          <a class="btn btn-primary" href="/ratgeber/">Zum Ratgeber</a>
+          <a class="btn btn-primary" href="https://svb-brueckers.de/ratgeber/">Zum Ratgeber</a>
+        </article>
+        <article class="guide-card" role="listitem">
+          <h3>130-Prozent-Rechner</h3>
+          <p>Prüfen Sie, ob eine Reparatur im Rahmen der 130-Prozent-Regel grundsätzlich infrage kommt.</p>
+          <a class="btn btn-primary" href="https://svb-brueckers.de/ratgeber/130-prozent-rechner/">Zum Rechner</a>
         </article>
       </div>
     </div>
@@ -773,6 +779,9 @@ if (location.protocol !== "https:" && !isLocalPreviewHost) {
         <a href="/">Startseite</a>
         <a href="/#leistungen">Leistungen</a>
         <a href="/#kontakt">Kontakt</a>
+        <a href="https://svb-brueckers.de/faq/">FAQ</a>
+        <a href="https://svb-brueckers.de/ratgeber/">Ratgeber</a>
+        <a href="https://svb-brueckers.de/ratgeber/130-prozent-rechner/">Rechner</a>
         <a href="tel:+491759415528">Telefon</a>
         <a href="https://svb-brueckers.de/">Zur Hauptseite SVB Brückers</a>
       </nav>
