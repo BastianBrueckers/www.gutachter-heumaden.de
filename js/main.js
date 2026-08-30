@@ -88,106 +88,6 @@ function initFaqAccordion() {
   });
 }
 
-function initConsentAndMaps() {
-  var CONSENT_KEY = 'siteConsentExternalContent';
-  var CONSENT_ACCEPTED = 'accepted';
-  var CONSENT_DECLINED = 'declined';
-  var mapContainer = document.querySelector('[data-map-container]');
-  var mapPlaceholder = document.querySelector('[data-map-placeholder]');
-  var mapConsentButton = document.querySelector('[data-map-consent-button]');
-  var consentBanner = document.querySelector('[data-consent-banner]');
-  var acceptButton = document.querySelector('[data-consent-accept]');
-  var declineButton = document.querySelector('[data-consent-decline]');
-  var settingsTriggers = document.querySelectorAll('[data-open-cookie-settings]');
-
-  function getConsentValue() {
-    try {
-      return window.localStorage.getItem(CONSENT_KEY);
-    } catch (error) {
-      return null;
-    }
-  }
-
-  function setConsentValue(value) {
-    try {
-      window.localStorage.setItem(CONSENT_KEY, value);
-    } catch (error) {
-      // Die Auswahl gilt in diesem Fall nur für den aktuellen Seitenaufruf.
-    }
-  }
-
-  function hideBanner() {
-    if (consentBanner) consentBanner.hidden = true;
-  }
-
-  function showBanner() {
-    if (consentBanner) consentBanner.hidden = false;
-  }
-
-  function renderMap() {
-    if (!mapContainer || mapContainer.dataset.mapLoaded === 'true') return;
-
-    var mapIframe = document.createElement('iframe');
-    var mapUrl = new URL('https://maps.google.com/maps');
-    mapUrl.searchParams.set('q', '48.7475466,9.2399083');
-    mapUrl.searchParams.set('ll', '48.7523,9.2332');
-    mapUrl.searchParams.set('z', '12');
-    mapUrl.searchParams.set('output', 'embed');
-
-    mapIframe.src = mapUrl.toString();
-    mapIframe.loading = 'lazy';
-    mapIframe.referrerPolicy = 'no-referrer-when-downgrade';
-    mapIframe.allowFullscreen = true;
-    mapIframe.title = 'Google Maps Standort von SVB Brückers';
-
-    mapContainer.innerHTML = '';
-    mapContainer.appendChild(mapIframe);
-    mapContainer.dataset.mapLoaded = 'true';
-  }
-
-  function applyConsentState(value) {
-    if (value === CONSENT_ACCEPTED) {
-      renderMap();
-      hideBanner();
-      return;
-    }
-
-    if (mapPlaceholder) mapPlaceholder.hidden = false;
-    if (value === CONSENT_DECLINED) {
-      hideBanner();
-    } else {
-      showBanner();
-    }
-  }
-
-  if (acceptButton) {
-    acceptButton.addEventListener('click', function () {
-      setConsentValue(CONSENT_ACCEPTED);
-      applyConsentState(CONSENT_ACCEPTED);
-    });
-  }
-
-  if (declineButton) {
-    declineButton.addEventListener('click', function () {
-      setConsentValue(CONSENT_DECLINED);
-      applyConsentState(CONSENT_DECLINED);
-    });
-  }
-
-  if (mapConsentButton) {
-    mapConsentButton.addEventListener('click', function () {
-      setConsentValue(CONSENT_ACCEPTED);
-      applyConsentState(CONSENT_ACCEPTED);
-    });
-  }
-
-  settingsTriggers.forEach(function (trigger) {
-    trigger.addEventListener('click', showBanner);
-  });
-
-  applyConsentState(getConsentValue());
-}
-
 function initProcessSlider() {
   var slider = document.querySelector('[data-process-slider]');
   if (!slider) return;
@@ -314,11 +214,43 @@ function initProcessSlider() {
   });
 }
 
+function initContactForms() {
+  document.querySelectorAll('[data-contact-form]').forEach(function (form) {
+    var email = form.querySelector('input[name="email"]');
+    var phone = form.querySelector('input[name="phone"]');
+    var error = form.querySelector('[data-contact-error]');
+
+    function hasContactValue() {
+      return Boolean(
+        (email && email.value.trim()) ||
+        (phone && phone.value.trim())
+      );
+    }
+
+    function updateContactValidity() {
+      var message = hasContactValue() ? '' : 'Bitte geben Sie eine E-Mail-Adresse oder Telefonnummer an.';
+      if (email) email.setCustomValidity(message);
+      if (phone) phone.setCustomValidity('');
+      if (error) error.hidden = !message;
+      return !message;
+    }
+
+    if (email) email.addEventListener('input', updateContactValidity);
+    if (phone) phone.addEventListener('input', updateContactValidity);
+    form.addEventListener('submit', function (event) {
+      if (!updateContactValidity()) {
+        event.preventDefault();
+        if (email) email.focus();
+      }
+    });
+  });
+}
+
 function initPageFeatures() {
   initHeaderShadow();
   initFaqAccordion();
-  initConsentAndMaps();
   initProcessSlider();
+  initContactForms();
 }
 
 if (document.readyState === 'loading') {
