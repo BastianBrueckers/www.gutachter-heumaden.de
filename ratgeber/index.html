@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kfz-Ratgeber für Heumaden | Unfall, Kosten, Gutachten</title>
-  <meta name="description" content="Kfz-Ratgeber des Ingenieurbüros Brückers: Unfall-Checkliste, Kostenübersicht, FAQ und verständliche Informationen zur technischen Schadenbegutachtung.">
+  <title>Kfz-Ratgeber für Heumaden | Unfall, Teilschuld, Gutachten</title>
+  <meta name="description" content="Bebilderter Kfz-Ratgeber des Ingenieurbüros Brückers: Unfall, Teilschuld, Gutachten, Bagatellschaden, Wertminderung und Totalschaden verständlich erklärt.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://gutachter-heumaden.de/ratgeber/">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/webp" href="/images/svb-brueckers-logo.webp">
   <meta property="og:title" content="Kfz-Ratgeber für Stuttgart-Heumaden">
-  <meta property="og:description" content="Technisch geprüfte, verständliche Informationen rund um Fahrzeugschäden und Gutachten.">
+  <meta property="og:description" content="Verständliche Fachinformationen mit dem Brückers CI-Männchen rund um Unfall, Gutachten und Regulierung.">
   <meta property="og:url" content="https://gutachter-heumaden.de/ratgeber/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://gutachter-heumaden.de/images/bastian-brueckers-portrait.jpg">
+  <meta property="og:image" content="https://gutachter-heumaden.de/images/ratgeber/ratgeber-header.webp">
+  <meta property="og:image:alt" content="Brückers CI-Männchen als Begleiter durch den Kfz-Ratgeber">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -25,8 +26,14 @@
       "@type": "ItemList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "url": "https://gutachter-heumaden.de/ratgeber/unfall-checkliste/", "name": "Unfall-Checkliste: Was jetzt zu tun ist" },
-        { "@type": "ListItem", "position": 2, "url": "https://gutachter-heumaden.de/kosten/", "name": "Kfz-Gutachten: Kosten und Beauftragung" },
-        { "@type": "ListItem", "position": 3, "url": "https://gutachter-heumaden.de/faq/", "name": "Häufige Fragen zum Kfz-Gutachten" }
+        { "@type": "ListItem", "position": 2, "url": "https://svb-brueckers.de/ratgeber/was-macht-ein-kfz-gutachten-aus/", "name": "Kfz-Gutachten nach Unfall: Inhalte und Nutzen" },
+        { "@type": "ListItem", "position": 3, "url": "https://svb-brueckers.de/ratgeber/wann-sich-ein-gutachten-lohnt/", "name": "Wann lohnt sich ein Unfallgutachten?" },
+        { "@type": "ListItem", "position": 4, "url": "https://svb-brueckers.de/ratgeber/teilschuld-lohnt-sich-gutachten/", "name": "Teilschuld – lohnt sich trotzdem ein Gutachten?" },
+        { "@type": "ListItem", "position": 5, "url": "https://svb-brueckers.de/ratgeber/bagatellschaden-definition/", "name": "Bagatellschaden einfach erklärt" },
+        { "@type": "ListItem", "position": 6, "url": "https://svb-brueckers.de/ratgeber/wertminderung-nach-unfall/", "name": "Wertminderung nach Unfall" },
+        { "@type": "ListItem", "position": 7, "url": "https://svb-brueckers.de/ratgeber/dauer-gutachten-auszahlung/", "name": "Wie lange dauert ein Gutachten?" },
+        { "@type": "ListItem", "position": 8, "url": "https://svb-brueckers.de/ratgeber/totalschaden-bedeutung-auszahlung/", "name": "Totalschaden – was bedeutet das?" },
+        { "@type": "ListItem", "position": 9, "url": "https://svb-brueckers.de/ratgeber/130-prozent-rechner/", "name": "130-Prozent-Rechner" }
       ]
     }
   }
@@ -35,30 +42,77 @@
 </head>
 <body>
   <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
-  <header class="header" id="top"><div class="container header-inner"><a href="/" class="logo" aria-label="Zur Startseite von Gutachter Heumaden"><img src="/images/svb-brueckers-logo.webp" alt="Logo des Ingenieurbüros Brückers" width="36" height="36" class="logo-img"><span class="logo-text">Ingenieurbüro Brückers</span></a><button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav" onclick="toggleMenu()"><span></span><span></span><span></span></button><nav class="nav" id="nav" aria-label="Hauptnavigation"><a href="/leistungen/unfallgutachten/" onclick="closeMenu()">Unfallgutachten</a><a href="/leistungen/fahrzeugbewertung/" onclick="closeMenu()">Fahrzeugbewertung</a><a href="/ueber-mich/" onclick="closeMenu()">Über mich</a><a href="/kosten/" onclick="closeMenu()">Kosten</a><a href="/#kontakt" onclick="closeMenu()">Kontakt</a></nav></div></header>
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="Zur Startseite von Gutachter Heumaden"><img src="/images/svb-brueckers-logo.webp" alt="Logo des Ingenieurbüros Brückers" width="36" height="36" class="logo-img"><span class="logo-text">Ingenieurbüro Brückers</span></a>
+      <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav" aria-label="Hauptnavigation"><a href="/leistungen/unfallgutachten/" onclick="closeMenu()">Unfallgutachten</a><a href="/ueber-mich/" onclick="closeMenu()">Über mich</a><a href="/kosten/" onclick="closeMenu()">Kostenfrei*</a><a href="/faq/" onclick="closeMenu()">FAQ</a><a href="/#kontakt" onclick="closeMenu()">Kontakt</a></nav>
+    </div>
+  </header>
   <div class="header-spacer" aria-hidden="true"></div>
 
-  <main id="main-content" class="content-page">
-    <div class="container content-page__inner">
+  <main id="main-content" class="content-page ratgeber-overview">
+    <div class="container content-page__inner ratgeber-layout">
       <nav class="breadcrumb" aria-label="Brotkrümelnavigation"><a href="/">Startseite</a><span aria-hidden="true">/</span><span>Ratgeber</span></nav>
-      <p class="eyebrow">Technik verständlich erklärt</p>
-      <h1>Kfz-Ratgeber für Heumaden und Umgebung</h1>
-      <p class="lead">Die Inhalte helfen Ihnen, nach einem Unfall geordnet vorzugehen und technische Fragen von Kosten- oder Rechtsfragen zu unterscheiden. Jeder Beitrag nennt Autor und Aktualisierungsstand.</p>
 
-      <div class="article-grid">
-        <article class="article-card"><p class="eyebrow">Checkliste · 5 Minuten</p><h2>Unfall-Checkliste: Was jetzt zu tun ist</h2><p>Unfallstelle sichern, Situation fotografieren, Daten austauschen und den Fahrzeugzustand vor der Reparatur dokumentieren.</p><a class="service-link" href="/ratgeber/unfall-checkliste/">Checkliste lesen <span aria-hidden="true">→</span></a></article>
-        <article class="article-card"><p class="eyebrow">Kosten · Orientierung</p><h2>Wer trägt die Gutachterkosten?</h2><p>Haftpflicht, Teilschuld, Kasko und Privatbeauftragung klar voneinander unterschieden.</p><a class="service-link" href="/kosten/">Kostenübersicht lesen <span aria-hidden="true">→</span></a></article>
-        <article class="article-card"><p class="eyebrow">FAQ · Kurzantworten</p><h2>Häufige Fragen zum Kfz-Gutachten</h2><p>Antworten zu Unterlagen, Dauer, Weitergabe des Gutachtens, kleinen Schäden und Fahrzeugbewertungen.</p><a class="service-link" href="/faq/">FAQ öffnen <span aria-hidden="true">→</span></a></article>
-        <article class="article-card"><p class="eyebrow">Leistung · Überblick</p><h2>Was enthält ein Unfallgutachten?</h2><p>Besichtigung, Fotodokumentation, Reparaturkalkulation und relevante Fahrzeugwerte im Überblick.</p><a class="service-link" href="/leistungen/unfallgutachten/">Leistungsseite öffnen <span aria-hidden="true">→</span></a></article>
-      </div>
+      <section class="ratgeber-hero-panel" aria-labelledby="ratgeber-title">
+        <div>
+          <p class="eyebrow">Technik verständlich erklärt</p>
+          <h1 id="ratgeber-title">Kfz-Ratgeber für Heumaden und Umgebung</h1>
+          <p class="lead">Mein CI-Männchen begleitet Sie durch verständliche Fachinformationen zu Unfall, Gutachten, Teilschuld und Schadenregulierung.</p>
+          <p class="ratgeber-source-note">Die lokale Unfall-Checkliste lesen Sie direkt hier. Ausführliche Fachartikel öffnen sich auf <strong>svb-brueckers.de</strong>, der Hauptseite des Ingenieurbüros Brückers.</p>
+        </div>
+        <img src="/images/ratgeber/ratgeber-header.webp" alt="Brückers CI-Männchen als Begleiter durch den Kfz-Ratgeber" width="461" height="900" decoding="async">
+      </section>
 
-      <div class="note-box"><p><strong>Redaktioneller Grundsatz:</strong> Inhalte werden nicht allein für Suchmaschinen veröffentlicht. Maßgeblich sind fachliche Relevanz, nachvollziehbare Autorenschaft und ein konkreter Nutzen für Fahrzeughalter.</p></div>
+      <section class="ratgeber-posts" aria-labelledby="ratgeber-posts-title">
+        <h2 id="ratgeber-posts-title" class="ratgeber-posts-title">Ratgeberthemen</h2>
+        <div class="article-grid ratgeber-grid" role="list">
+          <a class="article-card ratgeber-card" role="listitem" href="/ratgeber/unfall-checkliste/">
+            <div class="article-card-media ratgeber-image-wrapper"><img src="/images/ratgeber/ratgeber-header.webp" alt="Brückers CI-Männchen führt durch die Unfall-Checkliste" width="461" height="900" loading="lazy" decoding="async"></div>
+            <div class="ratgeber-content"><h3 class="article-card-title">Unfall-Checkliste: Was jetzt zu tun ist</h3><p>Unfallstelle sichern, Situation dokumentieren und den Fahrzeugzustand vor der Reparatur festhalten.</p><span class="article-card-link ratgeber-button">Checkliste lesen <span aria-hidden="true">→</span></span></div>
+          </a>
+          <a class="article-card ratgeber-card" role="listitem" href="https://svb-brueckers.de/ratgeber/was-macht-ein-kfz-gutachten-aus/" target="_blank" rel="noopener noreferrer">
+            <div class="article-card-media ratgeber-image-wrapper"><img src="/images/ratgeber/kfz-gutachten-inhalte.webp" alt="Brückers CI-Männchen liest ein Kfz-Gutachten" width="821" height="900" loading="lazy" decoding="async"></div>
+            <div class="ratgeber-content"><h3 class="article-card-title">Kfz-Gutachten nach Unfall: Inhalte und Nutzen</h3><p>Welche Feststellungen, Werte und Kalkulationen für die technische Dokumentation wichtig sind.</p><span class="article-card-link ratgeber-button">Fachartikel lesen <span aria-hidden="true">→</span></span></div>
+          </a>
+          <a class="article-card ratgeber-card" role="listitem" href="https://svb-brueckers.de/ratgeber/wann-sich-ein-gutachten-lohnt/" target="_blank" rel="noopener noreferrer">
+            <div class="article-card-media ratgeber-image-wrapper"><img src="/images/ratgeber/wann-lohnt-unfallgutachten.webp" alt="Brückers CI-Männchen erklärt, wann sich ein Unfallgutachten lohnt" width="900" height="563" loading="lazy" decoding="async"></div>
+            <div class="ratgeber-content"><h3 class="article-card-title">Wann lohnt sich ein Unfallgutachten?</h3><p>Wann ein Gutachten sinnvoller sein kann als eine kleinere technische Dokumentation.</p><span class="article-card-link ratgeber-button">Fachartikel lesen <span aria-hidden="true">→</span></span></div>
+          </a>
+          <a class="article-card ratgeber-card" role="listitem" href="https://svb-brueckers.de/ratgeber/teilschuld-lohnt-sich-gutachten/" target="_blank" rel="noopener noreferrer">
+            <div class="article-card-media ratgeber-image-wrapper"><img src="/images/ratgeber/teilschuld.webp" alt="Brückers CI-Männchen erklärt die Begutachtung bei Teilschuld" width="900" height="716" loading="lazy" decoding="async"></div>
+            <div class="ratgeber-content"><h3 class="article-card-title">Teilschuld – lohnt sich trotzdem ein Gutachten?</h3><p>Warum die unabhängige Feststellung der Schadenhöhe auch bei einer Haftungsquote wichtig bleibt.</p><span class="article-card-link ratgeber-button">Fachartikel lesen <span aria-hidden="true">→</span></span></div>
+          </a>
+          <a class="article-card ratgeber-card" role="listitem" href="https://svb-brueckers.de/ratgeber/bagatellschaden-definition/" target="_blank" rel="noopener noreferrer">
+            <div class="article-card-media ratgeber-image-wrapper"><img src="/images/ratgeber/bagatellschaden.webp" alt="Brückers CI-Männchen erklärt den Bagatellschaden" width="839" height="900" loading="lazy" decoding="async"></div>
+            <div class="ratgeber-content"><h3 class="article-card-title">Bagatellschaden einfach erklärt</h3><p>Wann ein kleiner Schaden als Bagatelle eingeordnet wird und welche Dokumentation passen kann.</p><span class="article-card-link ratgeber-button">Fachartikel lesen <span aria-hidden="true">→</span></span></div>
+          </a>
+          <a class="article-card ratgeber-card" role="listitem" href="https://svb-brueckers.de/ratgeber/wertminderung-nach-unfall/" target="_blank" rel="noopener noreferrer">
+            <div class="article-card-media ratgeber-image-wrapper"><img src="/images/ratgeber/wertminderung.webp" alt="Brückers CI-Männchen erklärt die Wertminderung nach einem Unfall" width="900" height="632" loading="lazy" decoding="async"></div>
+            <div class="ratgeber-content"><h3 class="article-card-title">Wertminderung nach Unfall</h3><p>Warum ein repariertes Fahrzeug dennoch einen Minderwert haben kann und wie er eingeordnet wird.</p><span class="article-card-link ratgeber-button">Fachartikel lesen <span aria-hidden="true">→</span></span></div>
+          </a>
+          <a class="article-card ratgeber-card" role="listitem" href="https://svb-brueckers.de/ratgeber/dauer-gutachten-auszahlung/" target="_blank" rel="noopener noreferrer">
+            <div class="article-card-media ratgeber-image-wrapper"><img src="/images/ratgeber/dauer-gutachten.webp" alt="Brückers CI-Männchen erklärt die Dauer eines Gutachtens" width="632" height="874" loading="lazy" decoding="async"></div>
+            <div class="ratgeber-content"><h3 class="article-card-title">Wie lange dauert ein Gutachten?</h3><p>Ein realistischer Überblick über Besichtigung, Ausarbeitung und die anschließenden Schritte.</p><span class="article-card-link ratgeber-button">Fachartikel lesen <span aria-hidden="true">→</span></span></div>
+          </a>
+          <a class="article-card ratgeber-card" role="listitem" href="https://svb-brueckers.de/ratgeber/totalschaden-bedeutung-auszahlung/" target="_blank" rel="noopener noreferrer">
+            <div class="article-card-media ratgeber-image-wrapper"><img src="/images/ratgeber/totalschaden.webp" alt="Brückers CI-Männchen erklärt den wirtschaftlichen Totalschaden" width="900" height="597" loading="lazy" decoding="async"></div>
+            <div class="ratgeber-content"><h3 class="article-card-title">Totalschaden – was bedeutet das?</h3><p>Wiederbeschaffungswert, Restwert und Reparaturkosten verständlich voneinander unterschieden.</p><span class="article-card-link ratgeber-button">Fachartikel lesen <span aria-hidden="true">→</span></span></div>
+          </a>
+          <a class="article-card ratgeber-card" role="listitem" href="https://svb-brueckers.de/ratgeber/130-prozent-rechner/" target="_blank" rel="noopener noreferrer">
+            <div class="article-card-media ratgeber-image-wrapper"><img src="/images/ratgeber/130-prozent-rechner.webp" alt="Brückers CI-Männchen beim 130-Prozent-Rechner" width="900" height="595" loading="lazy" decoding="async"></div>
+            <div class="ratgeber-content"><h3 class="article-card-title">Rechner: 130-Prozent-Regel einordnen</h3><p>Eine erste rechnerische Orientierung zur Reparatur im Verhältnis zum Wiederbeschaffungswert.</p><span class="article-card-link ratgeber-button">Rechner öffnen <span aria-hidden="true">→</span></span></div>
+          </a>
+        </div>
+      </section>
+
       <p class="source-list">Redaktion und fachliche Verantwortung: <a href="/ueber-mich/">Bastian Brückers</a> · Stand: 30. August 2026</p>
-      <section class="page-cta"><h2>Konkreten Schaden besprechen</h2><p>Allgemeine Informationen ersetzen keine Einordnung des tatsächlichen Fahrzeugschadens.</p><div class="page-cta__actions"><a class="btn btn-primary" href="tel:+491759415528">Jetzt anrufen</a><a class="btn btn-secondary" href="/#kontakt">Rückruf anfragen</a></div></section>
+      <section class="page-cta"><h2>Konkreten Schaden besprechen</h2><p>Bei angenommenen Haftpflichtschadengutachten gilt mein Kostenfrei-Versprechen – auch bei Teilschuld.*</p><div class="page-cta__actions"><a class="btn btn-primary" href="tel:+491759415528">Jetzt anrufen</a><a class="btn btn-secondary" href="/kosten/">Kostenfrei-Versprechen</a></div></section>
     </div>
   </main>
 
-  <footer class="footer footer--article"><div class="container footer-inner footer-inner--article"><div class="footer-brand-wrap"><div class="footer-brand"><img src="/images/svb-brueckers-logo.webp" alt="Logo des Ingenieurbüros Brückers" width="36" height="36" class="logo-img"><span class="logo-text">Ingenieurbüro Brückers</span></div><p class="footer-trust">Unabhängige Kfz-Gutachten in Stuttgart-Heumaden und Umgebung.</p></div><nav class="footer-links footer-links--primary" aria-label="Schnellzugriff"><a href="/">Startseite</a><a href="/leistungen/unfallgutachten/">Unfallgutachten</a><a href="/leistungen/fahrzeugbewertung/">Fahrzeugbewertung</a><a href="/ueber-mich/">Über mich</a><a href="/kosten/">Kosten</a><a href="/faq/">FAQ</a><a href="/#kontakt">Kontakt</a></nav><nav class="footer-links footer-links--legal" aria-label="Rechtliches"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></nav><p class="footer-copy">&copy; 2026 Ingenieurbüro Brückers · Kfz-Gutachter in Stuttgart-Heumaden.</p></div></footer>
+  <footer class="footer footer--article"><div class="container footer-inner footer-inner--article"><div class="footer-brand-wrap"><div class="footer-brand"><img src="/images/svb-brueckers-logo.webp" alt="Logo des Ingenieurbüros Brückers" width="36" height="36" class="logo-img"><span class="logo-text">Ingenieurbüro Brückers</span></div><p class="footer-trust">Unabhängige Kfz-Gutachten in Stuttgart-Heumaden und Umgebung.</p></div><nav class="footer-links footer-links--primary" aria-label="Schnellzugriff"><a href="/">Startseite</a><a href="/leistungen/unfallgutachten/">Unfallgutachten</a><a href="/ueber-mich/">Über mich</a><a href="/kosten/">Kostenfrei*</a><a href="/faq/">FAQ</a><a href="/#kontakt">Kontakt</a></nav><nav class="footer-links footer-links--legal" aria-label="Rechtliches"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></nav><p class="footer-copy">&copy; 2026 Ingenieurbüro Brückers · Kfz-Gutachter in Stuttgart-Heumaden.</p></div></footer>
   <a href="/#kontakt" class="contact-fab" aria-label="Kontakt aufnehmen">Kontakt aufnehmen</a>
   <a href="https://wa.me/491759415528?text=Hallo%20Herr%20Br%C3%BCckers,%20ich%20m%C3%B6chte%20einen%20Fahrzeugschaden%20besprechen." class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Kontakt per WhatsApp"><span class="fab-text">WhatsApp</span></a>
 </body>

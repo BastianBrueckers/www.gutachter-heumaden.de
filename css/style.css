@@ -5454,3 +5454,185 @@ img {
     display: none;
   }
 }
+
+/* Kostenfrei-USP and restored illustrated guide */
+.cost-promise {
+  padding: 54px 0;
+  background: linear-gradient(135deg, #183458 0%, #244f7d 100%);
+  color: #fff;
+}
+
+.cost-promise__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.9fr);
+  gap: 22px 46px;
+  align-items: center;
+}
+
+.cost-promise .eyebrow {
+  color: #ffbd7d;
+}
+
+.cost-promise h2 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: clamp(1.9rem, 4vw, 2.75rem);
+}
+
+.cost-promise__copy > p:last-child {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
+.cost-promise__facts {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cost-promise__facts li {
+  position: relative;
+  padding: 14px 16px 14px 44px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-weight: 700;
+}
+
+.cost-promise__facts li::before {
+  content: "✓";
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  color: #ffbd7d;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.cost-promise__small {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.cost-promise__small a {
+  color: #ffd3a4;
+  font-weight: 700;
+}
+
+.cost-free-note {
+  border-left-color: var(--accent);
+  background: #fff7ed;
+}
+
+.homepage-ratgeber .article-grid {
+  margin-top: 28px;
+}
+
+.homepage-ratgeber .ratgeber-card {
+  min-height: 400px;
+}
+
+.homepage-ratgeber .article-card-media {
+  background: #f7f9fc;
+}
+
+.ratgeber-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.homepage-ratgeber .ratgeber-actions .btn-secondary {
+  border-color: #bac7d6;
+  background: #fff;
+  color: var(--primary);
+}
+
+.ratgeber-hero-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(220px, 0.55fr);
+  gap: 38px;
+  align-items: center;
+  margin-bottom: 38px;
+  padding: 32px 38px;
+  border: 1px solid #dce6f1;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #f9fbff 0%, #eef4fb 100%);
+  overflow: hidden;
+}
+
+.ratgeber-hero-panel h1 {
+  margin-bottom: 14px;
+}
+
+.ratgeber-hero-panel img {
+  width: min(100%, 245px);
+  max-height: 330px;
+  margin: 0 auto -34px;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.ratgeber-source-note {
+  margin-top: 16px;
+  color: #40536a;
+  font-size: 0.91rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 1180px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-cost-badge {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    width: clamp(116px, 15vw, 150px);
+    margin: 0 auto 14px;
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-cost-badge {
+    width: 112px;
+  }
+
+  .hero-cost-badge-text {
+    font-size: 24px;
+  }
+
+  .cost-promise__inner,
+  .ratgeber-hero-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .cost-promise {
+    padding: 42px 0;
+  }
+
+  .ratgeber-hero-panel {
+    padding: 26px 22px;
+    text-align: left;
+  }
+
+  .ratgeber-hero-panel img {
+    width: min(72%, 220px);
+    max-height: 270px;
+    margin-bottom: -28px;
+  }
+}
